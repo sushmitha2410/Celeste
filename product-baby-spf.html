@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="product-skin-scrub.css">
+</head>
+<body>
+    <div class="header">
+        <div class="main-heading">
+            <a class="home" href="home.html"><button class="home-icon"><ion-icon name="home"></ion-icon></button></a>
+            <div class="heading"><h1>Celeste</h1></div>
+            <div class="shopping">
+                <ion-icon onclick="location.href='cart.html'
+                " name="cart"></ion-icon>
+            </div>
+        </div>
+        <div class="nav">
+            <centre>
+            <a class="navbar shop" href="shop-skin.html">SHOP</a>
+            <a class="navbar" href="about.html">ABOUT</a>
+            <a class="navbar" href="contact.html">CONTACT</a>
+            </centre>
+        </div>
+    </div>
+    <div class="nav for-who">
+        <centre>
+            <a class="navbar1" href="shop-skin.html">SKIN</a>
+            <a class="navbar1" href="shop-body.html">BODY</a>
+            <a class="navbar1" href="shop-hair.html">HAIR</a>
+            <a class="navbar1 shop" href="shop-baby.html">BABY</a>
+        </centre>
+    </div>
+    <div class="product-discription">
+        <div class="product-image">
+            <img src="pictures/babyspf.jpg" class="product-img">
+        </div>
+        <div class="product-write-up">
+            <p class="product-title">SPF 40 Baby Sunscreen</p>
+            <p class="discription">Introducing our SPF 40 Baby Sunscreen, a specially formulated sun protection essential for your little one's delicate skin. Crafted with the highest standards of care, this sunscreen offers broad-spectrum protection against harmful UVA and UVB rays.Enriched with nourishing ingredients like natural oils and gentle botanicals, it not only shields your baby's skin from the sun but also helps to keep it moisturized and soft. Water-resistant and pediatrician-approved, it's the perfect companion for outdoor adventures, providing reliable protection for your baby's sensitive skin.</p>
+            <p class="product-price">&#8377;399</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="contact">
+        <a class="instagram" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <h6>follow us</h6>
+        </a>
+        <a class="instagram" href="contact.html">
+            <ion-icon name="call-outline"></ion-icon>
+            <h6>write to us</h6>
+        </a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const addToCartButton = document.querySelector(".add-to-cart");
+            addToCartButton.addEventListener("click", function() {
+                const product = {
+                    title: "SPF 40 Baby Sunscreen",
+                    image: "pictures/babyspf.jpg",
+                    price: 399
+                };
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Product added to cart");
+            });
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

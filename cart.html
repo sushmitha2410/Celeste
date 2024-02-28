@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="header">
+        <div class="main-heading">
+            <a class="home" href="home.html"><button class="home-icon"><ion-icon name="home"></ion-icon></button></a>
+            <div class="heading"><h1>Celeste</h1></div>
+        </div>
+        <div class="nav">
+            <centre>
+            <a class="navbar shop" href="shop-skin.html">SHOP</a>
+            <a class="navbar" href="about.html">ABOUT</a>
+            <a class="navbar" href="contact.html">CONTACT</a>
+            </centre>
+        </div>
+    </div>
+    <div class="cart">
+        <h2 class="title">Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="total">
+            <h3>Total Price: <span id="total-price">&#8377;0</span></h3>
+        </div>
+        <button class="checkout" onclick="location.href='https://g.co/payinvite/cq7tx4v '">Check Out</button>
+    </div>
+    <div class="contact">
+        <a class="instagram" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <h6>follow us</h6>
+        </a>
+        <a class="instagram" href="contact.html">
+            <ion-icon name="call-outline"></ion-icon>
+            <h6>write to us</h6>
+        </a>
+    </div>
+
+
+    <script>
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const cartContainer = document.getElementById('cart-items');
+        const totalPriceDisplay = document.getElementById('total-price');
+        let totalPrice = 0;
+
+        function displayCart() {
+        cartContainer.innerHTML = '';
+        totalPrice = 0;
+
+        cartItems.forEach((item) => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+
+            const productImage = document.createElement('img');
+            productImage.src = item.image;
+            cartItem.appendChild(productImage);
+
+            const productTitle = document.createElement('p');
+            productTitle.textContent = item.title;
+            cartItem.appendChild(productTitle);
+
+            const productPrice = document.createElement('p');
+            productPrice.textContent = `Price: \u20B9${item.price}`;
+            cartItem.appendChild(productPrice);
+
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.addEventListener('click', () => removeItem(item));
+            cartItem.appendChild(removeButton);
+
+            cartContainer.appendChild(cartItem);
+            totalPrice += item.price;
+        });
+
+        totalPriceDisplay.textContent = `Total Price: \u20B9${totalPrice}`;
+        }
+
+        function removeItem(item) {
+        const cartItemToRemove = cartItems.find((cartItem) => cartItem === item);
+        cartItems.splice(cartItems.indexOf(cartItemToRemove), 1);
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+        displayCart();
+        }
+
+        displayCart();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="product-skin-scrub.css">
+</head>
+<body>
+    <div class="header">
+        <div class="main-heading">
+            <a class="home" href="home.html"><button class="home-icon"><ion-icon name="home"></ion-icon></button></a>
+            <div class="heading"><h1>Celeste</h1></div>
+            <div class="shopping">
+                <ion-icon onclick="location.href='cart.html'
+                " name="cart"></ion-icon>
+            </div>
+        </div>
+        <div class="nav">
+            <centre>
+            <a class="navbar shop" href="shop-skin.html">SHOP</a>
+            <a class="navbar" href="about.html">ABOUT</a>
+            <a class="navbar" href="contact.html">CONTACT</a>
+            </centre>
+        </div>
+    </div>
+    <div class="nav for-who">
+        <centre>
+            <a class="navbar1 shop" href="shop-skin.html">SKIN</a>
+            <a class="navbar1" href="shop-body.html">BODY</a>
+            <a class="navbar1" href="shop-hair.html">HAIR</a>
+            <a class="navbar1" href="shop-baby.html">BABY</a>
+        </centre>
+    </div>
+    <div class="product-discription">
+        <div class="product-image">
+            <img src="pictures/wash.jpg" class="product-img">
+        </div>
+        <div class="product-write-up">
+            <p class="product-title">Salicylic Acid Face Wash</p>
+            <p class="discription">Introducing our Salicylic Acid Face Wash, a dynamic solution for clearer, blemish-free skin. Formulated with the exfoliating power of salicylic acid, this gentle yet effective face wash deeply cleanses pores, targeting acne, blackheads, and blemishes. By unclogging pores and removing impurities, our face wash helps in preventing breakouts and promoting a clearer complexion. Perfect for daily use, this refreshing cleanser is designed to leave your skin feeling fresh, smooth, and visibly clearer, empowering you to face the day with confidence.</p>
+            <p class="product-price">&#8377;359</p>  
+            <button class="add-to-cart">Add to Cart</button>         
+        </div>
+    </div>
+    <div class="contact">
+        <a class="instagram" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <h6>follow us</h6>
+        </a>
+        <a class="instagram" href="contact.html">
+            <ion-icon name="call-outline"></ion-icon>
+            <h6>write to us</h6>
+        </a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const addToCartButton = document.querySelector(".add-to-cart");
+            addToCartButton.addEventListener("click", function() {
+                const product = {
+                    title: "Salicylic Acid Face Wash",
+                    image: "pictures/wash.jpg",
+                    price: 359
+                };
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Product added to cart");
+            });
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

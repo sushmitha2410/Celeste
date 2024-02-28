@@ -1,0 +1,166 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:  rgb(1,0,20);
+}
+.header {
+    height: 170px;
+}
+.heading {
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(169,169,169);
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.nav {
+    height: 50px;
+    text-align: center;
+}
+a{
+    color: rgb(169,169,169);
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0px 30px;
+}
+.about {
+    border-bottom: 2px solid rgb(169,169,169);
+    padding-bottom: 15px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.main {
+    width: 1100px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.from-body {
+    font-family: Averia Serif Libre, cursive;
+    color: #fff;
+    font-size: 70px;
+    font-style: italic;
+    border-bottom: 3px #fff solid;
+    padding-bottom: 50px;
+ }
+.au {
+    background-color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(1,0,20);
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px 0px;
+}
+.container2 {
+    background-color: #fff;
+    height: 650px;
+    display:flex;
+    justify-content: space-around;
+}
+.p2-1-1 {
+    font-family: Averia Serif Libre, cursive;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 50px 0px;
+}
+.p2-1-2 {
+    width: 500px;
+    font-family: abel, sans-serif;
+    font-size: 30px;    
+}
+.img2-2 {
+    width: 400px;
+}
+.container3 {
+    background-color: #fff;
+    height: 650px;
+    display:flex;
+    justify-content: space-around;
+}
+.img3-1 {
+    width: 400px;
+}
+.p3-2-1 {
+    font-family: Averia Serif Libre, cursive;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.p3-2-2 {
+    width: 500px;
+    font-family: abel, sans-serif;
+    font-size: 29px;
+}
+.container4 {
+    height: 300px;
+    background-color: rgb(169,169,169);
+    display: flex;
+    justify-content: space-around;    
+}
+.picpic1 {
+    margin-top: 40px;
+    height: 200px;
+}
+.instagram {
+    text-decoration: underline;
+    color: rgb(1,0,20);
+    padding-left: 130px;
+}
+.form {
+    padding: 50px 0px;
+}
+.newsletter {
+    font-size: 40px;
+    font-family: abel, sans-serif;
+    color: rgb(1,0,20);
+}
+label {
+    font-size: 40px;
+    font-family: abel, sans-serif;
+    color: rgb(1,0,20);
+}
+input {
+    padding: 10px 40px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    border: 0px solid rgb(169,169,169);
+}
+.signup{
+    padding: 10px;
+    color: rgb(169,169,169);
+    border: 2px solid rgb(169,169,169);
+    background-color: rgb(1,0,20);
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.signup:hover {
+    color: rgb(169,169,169);
+    background-color: rgb(1,0,20);
+}
+.finalnav {
+    margin: 50px;
+    text-decoration: underline;
+}
+.finalnav a {
+    font-size: 30px;
+    color: rgb(1,0,20);
+}

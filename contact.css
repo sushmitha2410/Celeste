@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body {
+    background-color:  rgb(52,55,11);
+}
+.main-heading{
+    display: flex;
+}
+h1 {
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(179, 171, 136);
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    margin-left: 370px;
+}
+.home {
+    display: flex;
+}
+.home-icon {
+    background-color: rgb(52,55,11);
+    cursor: pointer;
+    border: none;
+    font-size: 40px;
+    color: rgb(179, 171, 136);
+}
+.nav {
+    height: 50px;
+    text-align: center;
+}
+a{
+    color: #000;
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 30px;
+}
+.contact {
+    border-bottom: 2px solid rgb(179, 171, 136);
+    padding-bottom: 15px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.main {
+    width: 1100px;
+}
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.from-body {
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(52,55,11);
+    font-size: 70px;
+    border-bottom: 4px rgb(52,55,11) solid;
+    padding-bottom: 30px;
+}
+.contact-div1 {
+    display: flex;
+    justify-content: space-evenly;
+ }
+.contact-div {
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(179, 171, 136);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    backdrop-filter: blur(5px); 
+    margin: -70px 0 30px; 
+ }
+.touch , .call {
+    font-family: Averia Serif Libre;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(52,55,11);
+}
+.call {
+    margin: 20px 225px;
+    color: rgb(179, 171, 136);
+}
+.no-mail {
+    font-family: Averia Serif Libre;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(179, 171, 136);
+}
+.container4 {
+    height: 320px;
+    background-color: rgb(225,214,172);
+    display: flex;
+    justify-content: space-around;    
+}
+.picpic1 {
+    margin-top: 40px;
+    height: 200px;
+}
+.instagram {
+    text-decoration: underline;
+    color: #000;
+    padding-left: 130px;
+}
+.form {
+    padding: 50px 0px;
+}
+.newsletter {
+    font-size: 40px;
+    font-family: abel, sans-serif;
+    color: #000;
+}
+label {
+    font-size: 40px;
+    font-family: abel, sans-serif;
+    color: #000;
+}
+input {
+    padding: 10px 40px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    border: 0px solid #000;
+}
+.signup{
+    padding: 10px;
+    color: #000;
+    border: 2px solid #000;
+    background-color: rgb(225,214,172);
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.signup:hover {
+    color: #000;
+    background-color: rgb(179, 171, 136);
+}
+.finalnav {
+    margin: 50px;
+    text-decoration: underline;
+}
+.finalnav a {
+    font-size: 30px;
+}

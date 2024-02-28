@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.header {
+    background-color:  rgb(52,55,11);
+    height: 220px;
+}
+.main-heading{
+    display: flex;
+}
+h1 {
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(179, 171, 136);
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+    padding: 30px 0px;
+    margin-left: 370px;
+}
+.home {
+    display: flex;
+}
+.home-icon {
+    background-color: rgb(52,55,11);
+    cursor: pointer;
+    border: none;
+    font-size: 40px;
+    color: rgb(179, 171, 136);
+    margin-left: 35px;
+}
+.shopping ion-icon {
+    font-size: 40px;
+    color: rgb(179, 171, 136);
+    margin-left: 400px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.nav {
+    height: 50px;
+    text-align: center;
+}
+.nav.for-who {
+    padding-top: 40px;
+}
+.navbar {
+    color: rgb(179, 171, 136);
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 30px;
+}
+.navbar1 {
+    color: rgb(52,55,11);
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 30px;
+}
+.navbar1.shop {
+    border-bottom: 2px solid rgb(52,55,11);
+    padding-bottom: 15px;
+}
+.shop {
+    border-bottom: 2px solid rgb(179, 171, 136);
+    padding-bottom: 15px;
+}
+.contact , .instagram {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.instagram {
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: abel, sans-serif;
+}
+.title {
+    font-family: abel, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+div.cart-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 20px;
+    border: 1px solid #0000006a;
+    box-shadow: 5px 5px 5px;
+    width: 700px;
+    margin-left: 250px;
+    padding: 10px;
+    font-family: abel, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+img {    
+    width: 100px;
+}
+button {
+    height: 40px;
+    width: 80px;
+    border-radius: 0px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 40px;
+}
+button:hover {
+    background-color: rgba(52, 55, 11, 0.314);
+}
+p {
+    padding-top: 50px;
+}
+h3 {
+    font-family: abel,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin: 50px 40px;
+}
+.checkout {
+    height: 40px;
+    width: 80px;
+    border-radius: 0px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.9s;
+    margin-top: -30px;
+    margin-left: 1050px;
+}
+.checkout:hover {
+    background-color: rgba(52, 55, 11, 0.314);
+
+}

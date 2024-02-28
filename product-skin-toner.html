@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="product-skin-scrub.css">
+</head>
+<body>
+    <div class="header">
+        <div class="main-heading">
+            <a class="home" href="home.html"><button class="home-icon"><ion-icon name="home"></ion-icon></button></a>
+            <div class="heading"><h1>Celeste</h1></div>
+            <div class="shopping">
+                <ion-icon onclick="location.href='cart.html'
+                " name="cart"></ion-icon>
+            </div>
+        </div>
+        <div class="nav">
+            <centre>
+            <a class="navbar shop" href="shop-skin.html">SHOP</a>
+            <a class="navbar" href="about.html">ABOUT</a>
+            <a class="navbar" href="contact.html">CONTACT</a>
+            </centre>
+        </div>
+    </div>
+    <div class="nav for-who">
+        <centre>
+            <a class="navbar1 shop" href="shop-skin.html">SKIN</a>
+            <a class="navbar1" href="shop-body.html">BODY</a>
+            <a class="navbar1" href="shop-hair.html">HAIR</a>
+            <a class="navbar1" href="shop-baby.html">BABY</a>
+        </centre>
+    </div>
+    <div class="product-discription">
+        <div class="product-image">
+            <img src="pictures/toner.jpg" class="product-img">
+        </div>
+        <div class="product-write-up">
+            <p class="product-title">AHA BHA Toner</p>
+            <p class="discription">Unveil your skin's radiance with our AHA BHA Toner, a powerhouse blend of Alpha and Beta Hydroxy Acids. This gentle yet effective toner is crafted to exfoliate and refine skin texture, while minimizing the appearance of pores and uneven skin tone. By harnessing the benefits of both AHA (Alpha Hydroxy Acid) and BHA (Beta Hydroxy Acid), our toner works to unclog pores, remove dead skin cells, and promote a smoother, brighter complexion. Infused with skin-loving ingredients, this toner balances and preps your skin for enhanced absorption of serums and moisturizers, revealing a revitalized and glowing look</p>
+            <p class="product-price">&#8377;399</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="contact">
+        <a class="instagram" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <h6>follow us</h6>
+        </a>
+        <a class="instagram" href="contact.html">
+            <ion-icon name="call-outline"></ion-icon>
+            <h6>write to us</h6>
+        </a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const addToCartButton = document.querySelector(".add-to-cart");
+            addToCartButton.addEventListener("click", function() {
+                const product = {
+                    title: "AHA BHA Toner",
+                    image: "pictures/toner.jpg",
+                    price: 399
+                };
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Product added to cart");
+            });
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

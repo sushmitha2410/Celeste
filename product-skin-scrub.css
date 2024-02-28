@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.header {
+    background-color:  rgb(52,55,11);
+    height: 220px;
+}
+.main-heading{
+    display: flex;
+}
+h1 {
+    font-family: Averia Serif Libre, cursive;
+    color: rgb(179, 171, 136);
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+    padding: 30px 0px;
+    margin-left: 420px;
+}
+.home {
+    display: flex;
+}
+.home-icon {
+    background-color: rgb(52,55,11);
+    cursor: pointer;
+    border: none;
+    font-size: 40px;
+    color: rgb(179, 171, 136);
+    margin-left: 35px;
+}
+.shopping ion-icon {
+    font-size: 40px;
+    color: rgb(179, 171, 136);
+    margin-left: 400px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.nav {
+    height: 50px;
+    text-align: center;
+}
+.nav.for-who {
+    padding-top: 40px;
+}
+.navbar {
+    color: rgb(179, 171, 136);
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 30px;
+}
+.navbar1 {
+    color: rgb(52,55,11);
+    font-size: 15px;
+    font-family: abel, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 30px;
+}
+.navbar1.shop {
+    border-bottom: 2px solid rgb(52,55,11);
+    padding-bottom: 15px;
+}
+.shop {
+    border-bottom: 2px solid rgb(179, 171, 136);
+    padding-bottom: 15px;
+}
+.product-discription {
+    display: flex;
+    margin: 60px;
+}
+.product-img {
+    margin-right: 50px;
+    width: 400px;
+    border: 2px solid #000;
+}
+p {    
+    padding: 20px 1px;
+}
+.product-write-up {
+    margin-left: 50px;
+}
+.product-title {
+    font-family: Averia Serif Libre, cursive;
+    font-size: 50px;
+}
+.discription {
+    font-family: abel, sans-serif;
+    font-size: 23px;
+}
+.product-price {
+    font-family: abel, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact , .instagram {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.instagram {
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: abel, sans-serif;
+}
+.add-to-cart {
+    margin: 20px 0px;
+    padding: 20px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: abel, sans-serif;
+    transition: 0.3s;
+}
+.add-to-cart:hover {
+    background-color: #00000076;
+}
